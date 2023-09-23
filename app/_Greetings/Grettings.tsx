@@ -43,7 +43,8 @@ const Greetings: FunctionComponent<GreetingsProps> = () => {
             return (
               <Button
                 size="icon"
-                className={`rounded-full ${icon.backgroundColor}`}
+                variant="icon"
+                className={`${icon.backgroundColor}`}
                 key={icon.name}
               >
                 <Image src={icon.path} alt={icon.name} height={15} width={15} />
@@ -51,7 +52,10 @@ const Greetings: FunctionComponent<GreetingsProps> = () => {
             );
           })}
         </div>
-        <Button className="w-max rounded bg-white text-sm font-[600] tracking-wide text-black">
+        <Button
+          variant="outline"
+          className="w-max roundedtext-sm font-[600] tracking-wide text-black"
+        >
           <DocumentIcon className="mr-3 h-[17px]" />
           SEE MY RESUME
         </Button>
