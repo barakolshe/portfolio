@@ -69,14 +69,22 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .lottie-width {
+    @apply w-[100%] sm:w-[60%] lg:w-[40%];
+  }
+
+  .angled-bottom {
+    @apply box-content pb-[5vw];
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   }
 }
 

@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        "auto-skills": "repeat(auto-fill, minmax(85px, 1fr));",
+        "auto-skills": "repeat(auto-fill, minmax(90px, 1fr));",
       },
       fontFamily: {
         main: ['"Open Sans"', "sans-serif"],

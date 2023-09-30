@@ -1,8 +1,13 @@
 import { FunctionComponent } from "react";
-import { frontendIcons } from "@/assets/icons/icons";
+import {
+  frontendIcons,
+  backendIcons,
+  developmentCycleIcons,
+} from "@/assets/icons/icons";
 import * as frontendLottie from "@/assets/lottie/frontend.json";
+import * as backendLottie from "@/assets/lottie/backend.json";
+import * as developmentCycleLottie from "@/assets/lottie/engineer.json";
 import SkillsCard from "@/components/SkillsCard/SkillsCard";
-import LottieContainer from "@/components/ui/LottieContainer/LottieContainer";
 
 const skills = [
   {
@@ -10,31 +15,32 @@ const skills = [
     skills: frontendIcons,
     animation: frontendLottie,
   },
+  {
+    title: "Backend",
+    skills: backendIcons,
+    animation: backendLottie,
+  },
+  {
+    title: "Development Cycle",
+    skills: developmentCycleIcons,
+    animation: developmentCycleLottie,
+  },
 ];
 
 interface SkillsProps {}
 
 const Skills: FunctionComponent<SkillsProps> = () => {
   return (
-    <div className="flex flex-col gap-3 px-[100px]">
+    <div className="flex flex-col gap-3 px-[20px] lg:px-[100px]">
       <p className="text-3xl text-center font-semibold">Skills</p>
       {skills.map((skill) => (
-        <div
+        <SkillsCard
           key={skill.title}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-x-3"
-        >
-          <SkillsCard
-            className="w-[100%]"
-            title={skill.title}
-            skills={skill.skills}
-          />
-          <div className="mx-auto w-[100%] ">
-            <LottieContainer
-              animationData={skill.animation}
-              loop={true}
-            ></LottieContainer>
-          </div>
-        </div>
+          className="w-[100%]"
+          title={skill.title}
+          skills={skill.skills}
+          animation={skill.animation}
+        />
       ))}
     </div>
   );

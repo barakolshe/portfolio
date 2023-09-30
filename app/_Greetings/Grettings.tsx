@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FunctionComponent } from "react";
-import * as loadingLottie from "@/assets/lottie/loading.json";
+import * as helloLottie from "@/assets/lottie/hello.json";
 import Lottie from "lottie-react";
 import { Button } from "@/components/ui/Button/Button";
 import { DocumentIcon } from "@heroicons/react/24/solid";
@@ -11,7 +11,7 @@ interface GreetingsProps {}
 
 const Greetings: FunctionComponent<GreetingsProps> = () => {
   return (
-    <div className="container mx-auto flex flex-row flex-wrap justify-center gap-3 align-middle ">
+    <div className="container mx-auto flex flex-row flex-wrap justify-center gap-3 align-middle pb-3">
       <div className="my-auto flex w-[100%] flex-col gap-3 lg:w-[40%]">
         <p className="text-4xl font-semibold text-white">Hi all I'm Barak</p>
         <p className="text-xl/8 font-light text-white">
@@ -29,9 +29,9 @@ const Greetings: FunctionComponent<GreetingsProps> = () => {
           SEE MY RESUME
         </Button>
       </div>
-      <div className="w-[100%] lg:w-[40%]">
+      <div className="lottie-width">
         <LottieContainer
-          animationData={loadingLottie}
+          animationData={helloLottie}
           loop={true}
         ></LottieContainer>
       </div>
