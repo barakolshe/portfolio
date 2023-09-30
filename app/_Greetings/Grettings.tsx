@@ -1,4 +1,3 @@
-"use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FunctionComponent } from "react";
 import * as loadingLottie from "@/assets/lottie/loading.json";
@@ -6,6 +5,7 @@ import Lottie from "lottie-react";
 import { Button } from "@/components/ui/Button/Button";
 import { DocumentIcon } from "@heroicons/react/24/solid";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
+import LottieContainer from "@/components/ui/Button/LottieContainer/LottieContainer";
 
 interface GreetingsProps {}
 
@@ -30,7 +30,10 @@ const Greetings: FunctionComponent<GreetingsProps> = () => {
         </Button>
       </div>
       <div className="w-[100%] lg:w-[40%]">
-        <Lottie animationData={loadingLottie} loop={true}></Lottie>
+        <LottieContainer
+          animationData={loadingLottie}
+          loop={true}
+        ></LottieContainer>
       </div>
     </div>
   );

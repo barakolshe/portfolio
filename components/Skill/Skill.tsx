@@ -1,17 +1,23 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, ReactNode } from "react";
 import Icon from "../ui/Button/Icon/Icon";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { twMerge } from "tailwind-merge";
 
 interface SkillProps {
-  path: string | StaticImport;
+  className: string;
+  children: ReactNode;
   title: string;
 }
 
-const Skill: FunctionComponent<SkillProps> = ({ path, title }) => {
+const Skill: FunctionComponent<SkillProps> = ({
+  children,
+  title,
+  className,
+}) => {
   return (
-    <div className="flex flex-col align-middle">
-      <Icon path={path} alt={title} />
-      <p className="text-center">{title}</p>
+    <div className={twMerge("flex flex-col align-middle", className)}>
+      <Icon>{children}</Icon>
+      <p className="text-center whitespace-nowrap">{title}</p>
     </div>
   );
 };

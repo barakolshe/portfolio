@@ -1,11 +1,14 @@
-import Skill from "@/components/Skill/Skill";
 import { FunctionComponent } from "react";
 import { frontendIcons } from "@/assets/icons/icons";
+import * as frontendLottie from "@/assets/lottie/frontend.json";
+import SkillsCard from "@/components/SkillsCard/SkillsCard";
+import LottieContainer from "@/components/ui/Button/LottieContainer/LottieContainer";
 
 const skills = [
   {
-    path: "/icons/react.svg",
-    title: "React",
+    title: "Frontend",
+    skills: frontendIcons,
+    animation: frontendLottie,
   },
 ];
 
@@ -13,16 +16,26 @@ interface SkillsProps {}
 
 const Skills: FunctionComponent<SkillsProps> = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3 px-[100px]">
       <p className="text-3xl text-center font-semibold">Skills</p>
-      <div className="flex flex-row justify-around">
-        <div className="flex flex-col justify-between align-middle w-[50%]">
-          <p className="text-center text-2xl">Full stack development</p>
-          <div className="flex flex-row">
-            {frontendIcons.map((icon) => icon.icon)}
+      {skills.map((skill) => (
+        <div
+          key={skill.title}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-x-3"
+        >
+          <SkillsCard
+            className="w-[100%]"
+            title={skill.title}
+            skills={skill.skills}
+          />
+          <div className="mx-auto w-[100%] ">
+            <LottieContainer
+              animationData={skill.animation}
+              loop={true}
+            ></LottieContainer>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };
