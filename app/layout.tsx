@@ -16,14 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-main">
-        <Providers>
-          <div className="flex min-h-screen w-screen flex-col gap-3 bg-gradient-to-r from-cyan-500 to-blue-500">
-            <Navbar />
-            <div className="bg-transparent h-[68px]" />
-            {children}
-          </div>
-        </Providers>
+      <body className="font-main min-h-screen w-screen overflow-x-hidden text-foreground">
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
