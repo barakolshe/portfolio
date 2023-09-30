@@ -1,5 +1,5 @@
-const height = "30px";
-const width = "30px";
+const height = "100%";
+const width = "100%";
 
 export const frontendIcons = [
   {
