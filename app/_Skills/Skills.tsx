@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import { frontendIcons } from "@/assets/icons/icons";
 import * as frontendLottie from "@/assets/lottie/frontend.json";
 import SkillsCard from "@/components/SkillsCard/SkillsCard";
-import LottieContainer from "@/components/ui/Button/LottieContainer/LottieContainer";
+import LottieContainer from "@/components/ui/LottieContainer/LottieContainer";
 
 const skills = [
   {

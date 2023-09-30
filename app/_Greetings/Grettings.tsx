@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import { Button } from "@/components/ui/Button/Button";
 import { DocumentIcon } from "@heroicons/react/24/solid";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
-import LottieContainer from "@/components/ui/Button/LottieContainer/LottieContainer";
+import LottieContainer from "@/components/ui/LottieContainer/LottieContainer";
 
 interface GreetingsProps {}
 

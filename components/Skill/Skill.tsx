@@ -1,5 +1,5 @@
 import { FunctionComponent, ReactNode } from "react";
-import Icon from "../ui/Button/Icon/Icon";
+import Icon from "../ui/Icon/Icon";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { twMerge } from "tailwind-merge";
 
