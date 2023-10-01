@@ -8,7 +8,7 @@ import Projects from "./Projects/Projects";
 export default function Home() {
   return (
     <main className="flex flex-col justify-between gap-3">
-      <div className="gradient-background angled-bottom min-h-screen flex-col gap-3">
+      <div className="gradient-background-primary angled-bottom min-h-screen flex-col gap-3">
         <Navbar />
         <div className="h-[68px] bg-transparent" />
         <Greetings />

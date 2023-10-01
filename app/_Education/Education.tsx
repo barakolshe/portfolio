@@ -39,7 +39,7 @@ const educationArray = [
 
 const Education: FunctionComponent<EducationProps> = () => {
   return (
-    <div className="gradient-background angled-bottom pt-3">
+    <div className="gradient-background-primary angled-bottom pt-3">
       <p className="title text-white">Education</p>
       <div className="container grid grid-cols-1 gap-3 pt-3 md:grid-cols-2 lg:grid-cols-3">
         {educationArray.map((education) => (

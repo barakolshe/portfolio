@@ -41,7 +41,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
         <p className="mt-[0px] text-center text-lg leading-7 text-foreground">
           Full stack developer
         </p>
-        <p className="whitespace-pre-line text-sm">{description}</p>
+        <p className="whitespace-pre-line text-xs">{description}</p>
       </CardHeader>
       <CardFooter>
         <CardDate>{dates}</CardDate>

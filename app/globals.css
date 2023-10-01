@@ -97,7 +97,11 @@
     }
   }
 
-  .gradient-background {
+  .gradient-background-primary {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+  }
+
+  .gradient-background-primary {
     @apply bg-gradient-to-r from-cyan-500 to-blue-500;
   }
 
