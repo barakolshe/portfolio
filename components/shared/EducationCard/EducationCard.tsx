@@ -30,12 +30,12 @@ const EducationCard: FunctionComponent<EducationCardProps> = ({
   return (
     <Card className={twMerge(className, "")}>
       <CardHeader>
-        <CardTitle className="text-cyan-500">{place}</CardTitle>
+        <CardTitle className="text-primary">{place}</CardTitle>
         <CardDescription>{title}</CardDescription>
         {achievements.map((achievement) => (
           <p
             key={achievement}
-            className="w-max rounded-sm bg-cyan-500 px-[6px] py-[5.6px] text-3xs font-semibold leading-2 text-white"
+            className="w-max rounded-sm bg-primary px-[6px] py-[5.6px] text-3xs font-semibold leading-2 text-white"
           >
             {achievement}
           </p>
