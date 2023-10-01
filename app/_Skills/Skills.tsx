@@ -7,7 +7,7 @@ import {
 import * as frontendLottie from "@/assets/lottie/frontend.json";
 import * as backendLottie from "@/assets/lottie/backend.json";
 import * as developmentCycleLottie from "@/assets/lottie/engineer.json";
-import SkillsCard from "@/components/SkillsCard/SkillsCard";
+import SkillsCard from "@/components/shared/SkillsCard/SkillsCard";
 
 const skills = [
   {
@@ -32,7 +32,7 @@ interface SkillsProps {}
 const Skills: FunctionComponent<SkillsProps> = () => {
   return (
     <div className="flex flex-col gap-3 px-[20px] lg:px-[100px]">
-      <p className="text-3xl text-center font-semibold">Skills</p>
+      <p className="title">Skills</p>
       {skills.map((skill) => (
         <SkillsCard
           key={skill.title}

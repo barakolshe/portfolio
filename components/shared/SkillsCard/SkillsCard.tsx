@@ -1,7 +1,7 @@
 import { FunctionComponent, ReactNode } from "react";
 import Skill from "../Skill/Skill";
 import { twMerge } from "tailwind-merge";
-import LottieContainer from "../ui/LottieContainer/LottieContainer";
+import LottieContainer from "../../ui/LottieContainer/LottieContainer";
 
 type IconType = {
   name: string;
@@ -27,14 +27,14 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
       <div className="flex flex-row-reverse flex-wrap gap-x-3">
         <div
           className={twMerge(
-            "mx-auto flex flex-col justify-start align-middle gap-3 w-[100%] lg:w-[49%]",
-            className
+            "mx-auto flex w-[100%] flex-col justify-start gap-3 align-middle lg:w-[49%]",
+            className,
           )}
         >
           <div className="grid grid-cols-auto-skills gap-y-3">
             {skills.map((icon) => (
               <Skill
-                className="w-[80px] mx-auto"
+                className="mx-auto w-[80px]"
                 key={icon.name}
                 title={icon.name}
               >
@@ -43,7 +43,7 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
             ))}
           </div>
         </div>
-        <div className="mx-auto lottie-width">
+        <div className="lottie-width mx-auto">
           <LottieContainer
             animationData={animation}
             loop={true}

@@ -15,7 +15,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
   return (
     <div
       id="portfolio-navbar"
-      className="bg-red container py-4 h-[--navbar-height] flex flex-col justify-center"
+      className="bg-red container flex h-[--navbar-height] flex-col justify-center py-4"
     >
       <h1 className="font-brand text-3xl font-normal text-white">
         Barak Olshe

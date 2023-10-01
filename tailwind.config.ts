@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       gridTemplateColumns: {
-        "auto-skills": "repeat(auto-fill, minmax(90px, 1fr));",
+        "auto-skills": "repeat(auto-fill, minmax(90px, 1fr))",
       },
       fontFamily: {
         main: ['"Open Sans"', "sans-serif"],
@@ -76,6 +76,14 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontSize: {
+        "3xs": "0.625rem",
+        "2xs": "0.75rem",
+        xs: "0.85rem",
+      },
+      lineHeight: {
+        "2": "0.625rem",
       },
     },
   },

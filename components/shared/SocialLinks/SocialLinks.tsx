@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { Button } from "../ui/Button/Button";
+import { Button } from "../../ui/Button/Button";
 import Image from "next/image";
 
 const icons = [
