@@ -57,6 +57,21 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        twitter: {
+          DEFAULT: "var(--twitter)",
+          hover: "var(--twitter-hover)",
+          foreground: "var(--twitter-foreground)",
+        },
+        linkedin: {
+          DEFAULT: "var(--linkedin)",
+          hover: "var(--linkedin-hover)",
+          foreground: "var(--linkedin-foreground)",
+        },
+        github: {
+          DEFAULT: "var(--github)",
+          hover: "var(--github-hover)",
+          foreground: "var(--github-foreground)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +99,9 @@ module.exports = {
       },
       lineHeight: {
         "2": "0.625rem",
+      },
+      transitionDuration: {
+        fade: "1500ms",
       },
     },
   },

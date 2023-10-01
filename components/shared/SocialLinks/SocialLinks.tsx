@@ -6,17 +6,17 @@ const icons = [
   {
     name: "twitter",
     path: "/icons/twitter.svg",
-    className: "bg-[#1da1f2] hover:bg-[#0e80c4]",
+    className: "bg-twitter hover:bg-twitter-hover",
   },
   {
     name: "linkedin",
     path: "/icons/linkedin.svg",
-    className: "bg-[#1da1f2] hover:bg-[#0e80c4]",
+    className: "bg-linkedin hover:bg-linkedin-hover",
   },
   {
     name: "github",
     path: "/icons/github.svg",
-    className: "bg-[#222222] hover:bg-[#333333]",
+    className: "bg-github hover:bg-github-hover",
   },
 ];
 

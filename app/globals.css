@@ -38,6 +38,18 @@
 
     /* custome variables */
     --navbar-height: 68px;
+
+    --twitter: #1da1f2;
+    --twitter-hover: #0e80c4;
+    --twitter-foreground: #ffffff;
+
+    --linkedin: #1da1f2;
+    --linkedin-hover: #0e80c4;
+    --linkedin-foreground: #ffffff;
+
+    --github: #222222;
+    --github-hover: #333333;
+    --github-foreground: #ffffff;
   }
 
   .dark {
@@ -95,10 +107,6 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
     }
-  }
-
-  .gradient-background-primary {
-    @apply bg-gradient-to-r from-cyan-500 to-blue-500;
   }
 
   .gradient-background-primary {
