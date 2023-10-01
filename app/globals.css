@@ -81,10 +81,20 @@
     @apply w-[100%] sm:w-[60%] lg:w-[40%];
   }
 
-  .angled-bottom {
-    @apply box-content pb-[5vw];
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  @media (min-width: 768px) {
+    .angled-bottom {
+      @apply box-content pb-[5vw];
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .angled-bottom {
+      @apply box-content pb-[10vw];
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    }
   }
 
   .gradient-background {
