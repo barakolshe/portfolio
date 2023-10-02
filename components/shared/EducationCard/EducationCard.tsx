@@ -30,7 +30,7 @@ const EducationCard: FunctionComponent<EducationCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={twMerge(className, "h-full")}>
+    <Card className={twMerge(className, "")}>
       <CardHeader>
         <CardTitle className="text-primary">{place}</CardTitle>
         <CardDescription>{title}</CardDescription>

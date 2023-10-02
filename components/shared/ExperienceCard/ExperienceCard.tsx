@@ -28,7 +28,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={twMerge(className, "h-full")}>
+    <Card className={twMerge(className, "")}>
       <CardHeader className="space-y-0 pb-6">
         <Image
           className="mx-auto mb-1"

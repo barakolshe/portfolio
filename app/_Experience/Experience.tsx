@@ -8,7 +8,7 @@ const Experience: FunctionComponent<ExperienceProps> = () => {
   return (
     <div className="gap-section-spacing flex flex-col">
       <p className="title">Experience</p>
-      <div className="container grid grid-cols-1 gap-3 md:grid-cols-2">
+      <div className="container grid grid-cols-1 items-stretch gap-3 md:grid-cols-2">
         {experience.map((experience) => (
           <ExperienceCard
             key={experience.description}

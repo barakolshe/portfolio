@@ -10,7 +10,7 @@ import Footer from "./_Footer/Footer";
 
 export default function Home() {
   return (
-    <main className="gap-main-layout flex flex-col justify-between">
+    <main className="gap-main-layout flex w-full flex-col justify-between">
       <ScrollToTop />
       <Navbar />
       <div className="gradient-background-primary angled-bottom flex min-h-screen flex-col gap-3">

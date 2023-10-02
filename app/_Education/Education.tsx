@@ -8,7 +8,7 @@ const Education: FunctionComponent<EducationProps> = () => {
   return (
     <div className="gradient-background-primary angled-bottom gap-section-spacing flex flex-col pt-3">
       <p className="title text-white">Education</p>
-      <div className="container grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container grid grid-cols-1 items-stretch gap-3 md:grid-cols-2 lg:grid-cols-3">
         {education.map((education) => (
           <EducationCard
             key={education.description}
