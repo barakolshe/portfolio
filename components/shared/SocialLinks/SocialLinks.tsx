@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 import { Button } from "../../ui/Button/Button";
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
 const icons = [
   {
@@ -20,11 +21,13 @@ const icons = [
   },
 ];
 
-interface SocialLinksProps {}
+interface SocialLinksProps {
+  className?: string;
+}
 
-const SocialLinks: FunctionComponent<SocialLinksProps> = () => {
+const SocialLinks: FunctionComponent<SocialLinksProps> = ({ className }) => {
   return (
-    <div className="flex flex-row gap-3">
+    <div className={twMerge("flex flex-row gap-3", className)}>
       {icons.map((icon) => {
         return (
           <Button size="icon" className={icon.className} key={icon.name}>

@@ -6,6 +6,7 @@ import Experience from "./_Experience/Experience";
 import Projects from "./_Projects/Projects";
 import React from "react";
 import ScrollToTop from "@/components/shared/ScrollToTop/ScrollToTop";
+import Footer from "./_Footer/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Education />
       <Experience />
       <Projects />
+      <Footer />
     </main>
   );
 }

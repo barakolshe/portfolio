@@ -7,6 +7,7 @@ interface NavbarProps {}
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
   const { scrollingUp, onTop } = useTopbarScroll();
+  console.log(scrollingUp, onTop);
 
   return (
     <div
