@@ -29,7 +29,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={twMerge(className, "h-max")}>
+    <Card className={twMerge(className, "h-full")}>
       <CardHeader>
         <CardTitle className="">{title}</CardTitle>
         <div className="flex flex-row gap-1">
