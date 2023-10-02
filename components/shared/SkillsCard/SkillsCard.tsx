@@ -1,8 +1,7 @@
 import React, { FunctionComponent, ReactNode } from "react";
 import Skill from "../Skill/Skill";
-import { twMerge } from "tailwind-merge";
 import LottieContainer from "../../ui/LottieContainer/LottieContainer";
-import Fade from "@/components/ui/Fade/Fade";
+import { twMerge } from "tailwind-merge";
 
 type IconType = {
   name: string;
@@ -23,27 +22,25 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
   className,
 }) => {
   return (
-    <div className="flex flex-col gap-7">
+    <div className={twMerge("flex flex-col gap-7", className)}>
       <p className="text-center text-2xl">{title}</p>
       <div className="grid grid-cols-1 gap-x-3 md:grid-cols-2">
-        <Fade direction="right" className="md:order-last">
-          <div className="grid grid-cols-auto-skills gap-y-3">
-            {skills.map((icon) => (
-              <Skill
-                className="mx-auto w-[80px]"
-                key={icon.name}
-                title={icon.name}
-                src={icon.icon}
-              />
-            ))}
-          </div>
-        </Fade>
-        <Fade direction="left" className="mx-auto max-w-[75%] md:max-w-[85%]">
+        <div className="grid grid-cols-auto-skills gap-y-3 md:order-last">
+          {skills.map((icon) => (
+            <Skill
+              className="mx-auto w-[80px]"
+              key={icon.name}
+              title={icon.name}
+              src={icon.icon}
+            />
+          ))}
+        </div>
+        <div className="mx-auto max-w-[75%] md:max-w-[85%]">
           <LottieContainer
             animationData={animation}
             loop={true}
           ></LottieContainer>
-        </Fade>
+        </div>
       </div>
     </div>
   );

@@ -30,23 +30,21 @@ const EducationCard: FunctionComponent<EducationCardProps> = ({
   className,
 }) => {
   return (
-    <Fade direction="down" bottomMargin="10%">
-      <Card className={twMerge(className, "h-full")}>
-        <CardHeader>
-          <CardTitle className="text-primary">{place}</CardTitle>
-          <CardDescription>{title}</CardDescription>
-          {achievements.map((achievement) => (
-            <Badge key={achievement}>{achievement}</Badge>
-          ))}
-        </CardHeader>
-        <CardContent>
-          <p className="whitespace-pre-line text-2xs">{description}</p>
-        </CardContent>
-        <CardFooter className="absolute bottom-[3px] flex w-full flex-row justify-end px-4">
-          <CardDate className="text-3xs">{dates}</CardDate>
-        </CardFooter>
-      </Card>
-    </Fade>
+    <Card className={twMerge(className, "h-full")}>
+      <CardHeader>
+        <CardTitle className="text-primary">{place}</CardTitle>
+        <CardDescription>{title}</CardDescription>
+        {achievements.map((achievement) => (
+          <Badge key={achievement}>{achievement}</Badge>
+        ))}
+      </CardHeader>
+      <CardContent>
+        <p className="whitespace-pre-line text-2xs">{description}</p>
+      </CardContent>
+      <CardFooter className="absolute bottom-[3px] flex w-full flex-row justify-end px-4">
+        <CardDate className="text-3xs">{dates}</CardDate>
+      </CardFooter>
+    </Card>
   );
 };
 

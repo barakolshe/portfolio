@@ -28,27 +28,25 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
   className,
 }) => {
   return (
-    <Fade direction="left">
-      <Card className={twMerge(className, "h-full")}>
-        <CardHeader className="space-y-0 pb-6">
-          <Image
-            className="mx-auto mb-1"
-            src={icon}
-            alt="IDF Aman"
-            height={40}
-            width={40}
-          />
-          <CardTitle className="text-center">{place}</CardTitle>
-          <p className="mt-[0px] text-center text-lg leading-7 text-foreground">
-            Full stack developer
-          </p>
-          <p className="whitespace-pre-line text-xs">{description}</p>
-        </CardHeader>
-        <CardFooter>
-          <CardDate>{dates}</CardDate>
-        </CardFooter>
-      </Card>
-    </Fade>
+    <Card className={twMerge(className, "h-full")}>
+      <CardHeader className="space-y-0 pb-6">
+        <Image
+          className="mx-auto mb-1"
+          src={icon}
+          alt="IDF Aman"
+          height={40}
+          width={40}
+        />
+        <CardTitle className="text-center">{place}</CardTitle>
+        <p className="mt-[0px] text-center text-lg leading-7 text-foreground">
+          Full stack developer
+        </p>
+        <p className="whitespace-pre-line text-xs">{description}</p>
+      </CardHeader>
+      <CardFooter>
+        <CardDate>{dates}</CardDate>
+      </CardFooter>
+    </Card>
   );
 };
 
