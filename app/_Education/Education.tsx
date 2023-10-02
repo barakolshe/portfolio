@@ -12,7 +12,6 @@ const Education: FunctionComponent<EducationProps> = () => {
         {education.map((education) => (
           <EducationCard
             key={education.description}
-            className="w-100%"
             place={education.place}
             title={education.title}
             achievements={education.achievements}
