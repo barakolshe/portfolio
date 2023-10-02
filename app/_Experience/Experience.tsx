@@ -24,13 +24,12 @@ const experiences = [
 
 const Experience: FunctionComponent<ExperienceProps> = () => {
   return (
-    <div>
+    <div className="gap-section-spacing flex flex-col">
       <p className="title">Experience</p>
-      <div className="container grid grid-cols-1 gap-3 pt-3 md:grid-cols-2">
+      <div className="container grid grid-cols-1 gap-3 md:grid-cols-2">
         {experiences.map((experience) => (
           <ExperienceCard
             key={experience.description}
-            className=""
             icon={experience.icon}
             place={experience.place}
             title={experience.title}

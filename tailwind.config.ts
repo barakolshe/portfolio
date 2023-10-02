@@ -109,6 +109,11 @@ module.exports = {
       boxShadow: {
         "topbar-hover": "0 1px 10px rgba(130, 130, 134, 0.1)",
       },
+      spacing: {
+        "main-layout": "2rem",
+        "section-spacing": "2rem",
+        "inner-section-spacing": "1.5rem",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

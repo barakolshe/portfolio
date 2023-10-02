@@ -23,7 +23,7 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
   className,
 }) => {
   return (
-    <>
+    <div className="flex flex-col gap-7">
       <p className="text-center text-2xl">{title}</p>
       <div className="grid grid-cols-1 gap-x-3 md:grid-cols-2">
         <Fade direction="right" className="md:order-last">
@@ -46,7 +46,7 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
           ></LottieContainer>
         </Fade>
       </div>
-    </>
+    </div>
   );
 };
 

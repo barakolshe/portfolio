@@ -31,17 +31,19 @@ interface SkillsProps {}
 
 const Skills: FunctionComponent<SkillsProps> = () => {
   return (
-    <div className="flex flex-col gap-3 px-[20px] lg:px-[100px]">
+    <div className="gap-section-spacing flex flex-col px-[20px] lg:px-[100px]">
       <p className="title">Skills</p>
-      {skills.map((skill) => (
-        <SkillsCard
-          key={skill.title}
-          className="w-[100%]"
-          title={skill.title}
-          skills={skill.skills}
-          animation={JSON.parse(JSON.stringify(skill.animation))}
-        />
-      ))}
+      <div className="gap-inner-section-spacing flex flex-col">
+        {skills.map((skill) => (
+          <SkillsCard
+            key={skill.title}
+            className="w-[100%]"
+            title={skill.title}
+            skills={skill.skills}
+            animation={JSON.parse(JSON.stringify(skill.animation))}
+          />
+        ))}
+      </div>
     </div>
   );
 };
