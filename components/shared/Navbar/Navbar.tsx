@@ -2,12 +2,12 @@
 import React, { FunctionComponent } from "react";
 import useTopbarScroll from "@/hooks/useTopbarScroll";
 import clsx from "clsx";
+import { greetings } from "@/config/config";
 
 interface NavbarProps {}
 
 const Navbar: FunctionComponent<NavbarProps> = () => {
   const { scrollingUp, onTop } = useTopbarScroll();
-  console.log(scrollingUp, onTop);
 
   return (
     <div
@@ -19,7 +19,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
     >
       <div className="container">
         <h1 className="font-brand text-3xl font-normal text-white">
-          Barak Olshe
+          {greetings.name}
         </h1>
       </div>
     </div>

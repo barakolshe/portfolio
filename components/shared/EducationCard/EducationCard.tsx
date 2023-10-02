@@ -30,7 +30,7 @@ const EducationCard: FunctionComponent<EducationCardProps> = ({
   className,
 }) => {
   return (
-    <Fade direction="down" rootMargin="0px 0px 150px 0px">
+    <Fade direction="down" bottomMargin="10%">
       <Card className={twMerge(className, "h-full")}>
         <CardHeader>
           <CardTitle className="text-primary">{place}</CardTitle>

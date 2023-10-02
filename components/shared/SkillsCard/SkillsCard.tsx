@@ -6,7 +6,7 @@ import Fade from "@/components/ui/Fade/Fade";
 
 type IconType = {
   name: string;
-  icon: ReactNode;
+  icon: string;
 };
 
 interface SkillsCardProps {
@@ -33,9 +33,8 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
                 className="mx-auto w-[80px]"
                 key={icon.name}
                 title={icon.name}
-              >
-                {icon.icon}
-              </Skill>
+                src={icon.icon}
+              />
             ))}
           </div>
         </Fade>

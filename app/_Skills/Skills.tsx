@@ -1,31 +1,7 @@
 import { FunctionComponent } from "react";
-import {
-  frontendIcons,
-  backendIcons,
-  developmentCycleIcons,
-} from "@/assets/icons/icons";
-import * as frontendLottie from "@/assets/lottie/frontend.json";
-import * as backendLottie from "@/assets/lottie/backend.json";
-import * as developmentCycleLottie from "@/assets/lottie/engineer.json";
-import SkillsCard from "@/components/shared/SkillsCard/SkillsCard";
 
-const skills = [
-  {
-    title: "Frontend",
-    skills: frontendIcons,
-    animation: frontendLottie,
-  },
-  {
-    title: "Backend",
-    skills: backendIcons,
-    animation: backendLottie,
-  },
-  {
-    title: "Development Cycle",
-    skills: developmentCycleIcons,
-    animation: developmentCycleLottie,
-  },
-];
+import SkillsCard from "@/components/shared/SkillsCard/SkillsCard";
+import { skills } from "@/config/config";
 
 interface SkillsProps {}
 

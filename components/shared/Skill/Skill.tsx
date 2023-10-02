@@ -3,19 +3,15 @@ import Icon from "../../ui/Icon/Icon";
 import { twMerge } from "tailwind-merge";
 
 interface SkillProps {
-  className: string;
-  children: ReactNode;
+  src: string;
   title: string;
+  className?: string;
 }
 
-const Skill: FunctionComponent<SkillProps> = ({
-  children,
-  title,
-  className,
-}) => {
+const Skill: FunctionComponent<SkillProps> = ({ src, title, className }) => {
   return (
     <div className={twMerge("flex flex-col align-middle", className)}>
-      <Icon>{children}</Icon>
+      <Icon src={src} alt={title} />
       <p className="whitespace-nowrap text-center">{title}</p>
     </div>
   );

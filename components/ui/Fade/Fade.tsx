@@ -5,14 +5,31 @@ import { twMerge } from "tailwind-merge";
 
 type direction = "up" | "down" | "left" | "right";
 
-interface FadeProps extends IntersectionOptions {
+type FadeProps = Omit<IntersectionOptions, "rootMargin & triggerOnce"> & {
   direction: direction;
+  bottomMargin?: string;
   children: ReactNode;
   className?: string;
-}
+};
+
+const getDirection = (direction: direction) => {
+  switch (direction) {
+    case "up":
+      return "opacity-0 -translate-y-full";
+    case "down":
+      return "opacity-0 translate-y-full";
+    case "right":
+      return "opacity-0 translate-x-full";
+    case "left":
+      return "opacity-0 -translate-x-full";
+    default:
+      return "opacity-0 translate-x-full";
+  }
+};
 
 const Fade: FunctionComponent<FadeProps> = ({
   direction,
+  bottomMargin = "-3%",
   className,
   children,
   ...intersectionOptions
@@ -20,23 +37,9 @@ const Fade: FunctionComponent<FadeProps> = ({
   const [animationClassName, setAnimationClassName] = React.useState("");
   const [viewRef, inView] = useInView({
     triggerOnce: true,
+    rootMargin: `0px 0px ${bottomMargin} 0px`,
     ...intersectionOptions,
   });
-
-  const getDirection = (direction: direction) => {
-    switch (direction) {
-      case "up":
-        return "opacity-0 -translate-y-full";
-      case "down":
-        return "opacity-0 translate-y-full";
-      case "right":
-        return "opacity-0 translate-x-full";
-      case "left":
-        return "opacity-0 -translate-x-full";
-      default:
-        return "opacity-0 translate-x-full";
-    }
-  };
 
   React.useEffect(() => {
     if (animationClassName !== "" && inView) {
