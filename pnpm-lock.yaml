@@ -38,12 +38,6 @@ dependencies:
   eslint-config-next:
     specifier: 13.5.2
     version: 13.5.2(eslint@8.50.0)(typescript@5.2.2)
-  headroom.js:
-    specifier: ^0.12.0
-    version: 0.12.0
-  lucide-react:
-    specifier: ^0.279.0
-    version: 0.279.0(react@18.2.0)
   next:
     specifier: 13.5.2
     version: 13.5.2(react-dom@18.2.0)(react@18.2.0)
@@ -73,9 +67,6 @@ dependencies:
     version: 5.2.2
 
 devDependencies:
-  '@types/headroom.js':
-    specifier: ^0.12.2
-    version: 0.12.2
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -615,10 +606,6 @@ packages:
     dependencies:
       tslib: 2.6.2
     dev: false
-
-  /@types/headroom.js@0.12.2:
-    resolution: {integrity: sha512-dsor/R8cScrFMYfOeZHvRzemQdorA02OBS2ROVPkpCzMovsiws96mMIxOtGpFgme9QrL7zOOBfRosg6lHwg2vg==}
-    dev: true
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
@@ -1760,10 +1747,6 @@ packages:
       function-bind: 1.1.1
     dev: false
 
-  /headroom.js@0.12.0:
-    resolution: {integrity: sha512-iXnAafUm3FdzfJ91uixLws2hkKI1jC8bAKK/pt7XYr8Ie1jO7xbK48Ycpl9tUPyBgkzuj1p/PhJS0fy4E/5anA==}
-    dev: false
-
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
@@ -2082,14 +2065,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-    dev: false
-
-  /lucide-react@0.279.0(react@18.2.0):
-    resolution: {integrity: sha512-LJ8g66+Bxc3t3x9vKTeK3wn3xucrOQGfJ9ou9GsBwCt2offsrT2BB90XrTrIzE1noYYDe2O8jZaRHi6sAHXNxw==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /merge2@1.4.1:

@@ -1,3 +1,4 @@
+"use client";
 import { FunctionComponent } from "react";
 import {
   frontendIcons,
@@ -39,7 +40,7 @@ const Skills: FunctionComponent<SkillsProps> = () => {
           className="w-[100%]"
           title={skill.title}
           skills={skill.skills}
-          animation={skill.animation}
+          animation={JSON.parse(JSON.stringify(skill.animation))}
         />
       ))}
     </div>

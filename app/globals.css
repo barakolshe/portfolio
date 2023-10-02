@@ -38,6 +38,7 @@
 
     /* custome variables */
     --navbar-height: 68px;
+    --navbar-scroll: #172b4d;
 
     --twitter: #1da1f2;
     --twitter-hover: #0e80c4;
@@ -86,7 +87,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply overflow-y-auto bg-background text-foreground;
   }
 
   .lottie-width {

@@ -57,6 +57,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        navbar: {
+          scroll: "var(--navbar-scroll)",
+        },
         twitter: {
           DEFAULT: "var(--twitter)",
           hover: "var(--twitter-hover)",
@@ -101,7 +104,10 @@ module.exports = {
         "2": "0.625rem",
       },
       transitionDuration: {
-        fade: "1500ms",
+        fade: "2000ms",
+      },
+      boxShadow: {
+        "topbar-hover": "0 1px 10px rgba(130, 130, 134, 0.1)",
       },
     },
   },

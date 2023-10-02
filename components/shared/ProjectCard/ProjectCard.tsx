@@ -1,10 +1,10 @@
 import { Badge } from "@/components/ui/Badge/Badge";
 import { Button } from "@/components/ui/Button/Button";
 import {
-  Card,
   CardContent,
   CardHeader,
   CardTitle,
+  FadingCard,
 } from "@/components/ui/Card/Card";
 import Image from "next/image";
 import { FunctionComponent } from "react";
@@ -28,7 +28,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={twMerge(className, "")}>
+    <FadingCard direction="right" className={twMerge(className, "")}>
       <CardHeader>
         <CardTitle className="">{title}</CardTitle>
         <div className="flex flex-row gap-1">
@@ -64,7 +64,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
           )}
         </div>
       </CardContent>
-    </Card>
+    </FadingCard>
   );
 };
 

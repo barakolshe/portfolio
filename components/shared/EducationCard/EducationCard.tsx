@@ -7,6 +7,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
+  FadingCard,
 } from "../../ui/Card/Card";
 import { twMerge } from "tailwind-merge";
 import { Badge } from "@/components/ui/Badge/Badge";
@@ -29,7 +30,7 @@ const EducationCard: FunctionComponent<EducationCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={twMerge(className, "")}>
+    <FadingCard direction="down" className={twMerge(className, "")}>
       <CardHeader>
         <CardTitle className="text-primary">{place}</CardTitle>
         <CardDescription>{title}</CardDescription>
@@ -43,7 +44,7 @@ const EducationCard: FunctionComponent<EducationCardProps> = ({
       <CardFooter className="absolute bottom-[3px] flex w-full flex-row justify-end px-4">
         <CardDate className="text-3xs">{dates}</CardDate>
       </CardFooter>
-    </Card>
+    </FadingCard>
   );
 };
 

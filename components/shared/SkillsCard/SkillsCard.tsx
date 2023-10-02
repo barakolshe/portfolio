@@ -4,6 +4,7 @@ import Skill from "../Skill/Skill";
 import { twMerge } from "tailwind-merge";
 import LottieContainer from "../../ui/LottieContainer/LottieContainer";
 import { useInView } from "react-intersection-observer";
+import clsx from "clsx";
 
 type IconType = {
   name: string;
@@ -44,9 +45,10 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
           )}
         >
           <div
-            className={`duration-fade  grid grid-cols-auto-skills gap-y-3 transition-all ${
-              !gotInView ? "translate-x-[100%] opacity-0" : "translate-x-[0%]"
-            }`}
+            className={clsx(
+              "grid grid-cols-auto-skills gap-y-3 transition-[transform,opacity] duration-fade",
+              !gotInView ? "translate-x-full opacity-0" : "translate-x-[0%]",
+            )}
           >
             {skills.map((icon) => (
               <Skill
@@ -60,9 +62,10 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
           </div>
         </div>
         <div
-          className={`lottie-width duration-fade mx-auto transition-all ${
-            !gotInView ? "-translate-x-[100%] opacity-0" : "translate-x-[0%]"
-          }`}
+          className={clsx(
+            "lottie-width mx-auto transition-[transform,opacity] duration-fade",
+            !gotInView ? "-translate-x-full opacity-0" : "translate-x-[0%]",
+          )}
         >
           <LottieContainer
             animationData={animation}

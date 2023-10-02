@@ -35,8 +35,8 @@ export const frontendIcons = [
             y1="56.385%"
             y2="96.08%"
           >
-            <stop offset="0%" stop-color="#FFF" />
-            <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+            <stop offset="0%" stopColor="#FFF" />
+            <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="logosNextjsIcon1"
@@ -45,8 +45,8 @@ export const frontendIcons = [
             y1="0%"
             y2="73.438%"
           >
-            <stop offset="0%" stop-color="#FFF" />
-            <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+            <stop offset="0%" stopColor="#FFF" />
+            <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
           </linearGradient>
           <circle id="logosNextjsIcon2" cx="128" cy="128" r="128" />
         </defs>
@@ -145,8 +145,8 @@ export const frontendIcons = [
             y1="32%"
             y2="67.556%"
           >
-            <stop offset="0%" stop-color="#2298BD" />
-            <stop offset="100%" stop-color="#0ED7B5" />
+            <stop offset="0%" stopColor="#2298BD" />
+            <stop offset="100%" stopColor="#0ED7B5" />
           </linearGradient>
         </defs>
         <path
@@ -232,11 +232,11 @@ export const backendIcons = [
             y1="17.487%"
             y2="89.755%"
           >
-            <stop offset="0%" stop-color="#41873F" />
-            <stop offset="32.88%" stop-color="#418B3D" />
-            <stop offset="63.52%" stop-color="#419637" />
-            <stop offset="93.19%" stop-color="#3FA92D" />
-            <stop offset="100%" stop-color="#3FAE2A" />
+            <stop offset="0%" stopColor="#41873F" />
+            <stop offset="32.88%" stopColor="#418B3D" />
+            <stop offset="63.52%" stopColor="#419637" />
+            <stop offset="93.19%" stopColor="#3FA92D" />
+            <stop offset="100%" stopColor="#3FAE2A" />
           </linearGradient>
           <linearGradient
             id="logosNodejs1"
@@ -245,10 +245,10 @@ export const backendIcons = [
             y1="55.169%"
             y2="-18.306%"
           >
-            <stop offset="13.76%" stop-color="#41873F" />
-            <stop offset="40.32%" stop-color="#54A044" />
-            <stop offset="71.36%" stop-color="#66B848" />
-            <stop offset="90.81%" stop-color="#6CC04A" />
+            <stop offset="13.76%" stopColor="#41873F" />
+            <stop offset="40.32%" stopColor="#54A044" />
+            <stop offset="71.36%" stopColor="#66B848" />
+            <stop offset="90.81%" stopColor="#6CC04A" />
           </linearGradient>
           <linearGradient
             id="logosNodejs2"
@@ -257,10 +257,10 @@ export const backendIcons = [
             y1="13.43%"
             y2="13.43%"
           >
-            <stop offset="9.192%" stop-color="#6CC04A" />
-            <stop offset="28.64%" stop-color="#66B848" />
-            <stop offset="59.68%" stop-color="#54A044" />
-            <stop offset="86.24%" stop-color="#41873F" />
+            <stop offset="9.192%" stopColor="#6CC04A" />
+            <stop offset="28.64%" stopColor="#66B848" />
+            <stop offset="59.68%" stopColor="#54A044" />
+            <stop offset="86.24%" stopColor="#41873F" />
           </linearGradient>
           <linearGradient
             id="logosNodejs3"
@@ -269,10 +269,10 @@ export const backendIcons = [
             y1="49.997%"
             y2="49.997%"
           >
-            <stop offset="9.192%" stop-color="#6CC04A" />
-            <stop offset="28.64%" stop-color="#66B848" />
-            <stop offset="59.68%" stop-color="#54A044" />
-            <stop offset="86.24%" stop-color="#41873F" />
+            <stop offset="9.192%" stopColor="#6CC04A" />
+            <stop offset="28.64%" stopColor="#66B848" />
+            <stop offset="59.68%" stopColor="#54A044" />
+            <stop offset="86.24%" stopColor="#41873F" />
           </linearGradient>
           <linearGradient
             id="logosNodejs4"
@@ -281,10 +281,10 @@ export const backendIcons = [
             y1="36.21%"
             y2="36.21%"
           >
-            <stop offset="9.192%" stop-color="#6CC04A" />
-            <stop offset="28.64%" stop-color="#66B848" />
-            <stop offset="59.68%" stop-color="#54A044" />
-            <stop offset="86.24%" stop-color="#41873F" />
+            <stop offset="9.192%" stopColor="#6CC04A" />
+            <stop offset="28.64%" stopColor="#66B848" />
+            <stop offset="59.68%" stopColor="#54A044" />
+            <stop offset="86.24%" stopColor="#41873F" />
           </linearGradient>
           <linearGradient
             id="logosNodejs5"
@@ -293,10 +293,10 @@ export const backendIcons = [
             y1="50.275%"
             y2="50.275%"
           >
-            <stop offset="9.192%" stop-color="#6CC04A" />
-            <stop offset="28.64%" stop-color="#66B848" />
-            <stop offset="59.68%" stop-color="#54A044" />
-            <stop offset="86.24%" stop-color="#41873F" />
+            <stop offset="9.192%" stopColor="#6CC04A" />
+            <stop offset="28.64%" stopColor="#66B848" />
+            <stop offset="59.68%" stopColor="#54A044" />
+            <stop offset="86.24%" stopColor="#41873F" />
           </linearGradient>
           <linearGradient
             id="logosNodejs6"
@@ -305,11 +305,11 @@ export const backendIcons = [
             y1="-211.069%"
             y2="201.605%"
           >
-            <stop offset="0%" stop-color="#41873F" />
-            <stop offset="32.88%" stop-color="#418B3D" />
-            <stop offset="63.52%" stop-color="#419637" />
-            <stop offset="93.19%" stop-color="#3FA92D" />
-            <stop offset="100%" stop-color="#3FAE2A" />
+            <stop offset="0%" stopColor="#41873F" />
+            <stop offset="32.88%" stopColor="#418B3D" />
+            <stop offset="63.52%" stopColor="#419637" />
+            <stop offset="93.19%" stopColor="#3FA92D" />
+            <stop offset="100%" stopColor="#3FAE2A" />
           </linearGradient>
           <path
             id="logosNodejs7"
@@ -345,31 +345,31 @@ export const backendIcons = [
               <path d="M109.797 91.305V35.019c0-2.08-1.271-4.045-3.12-5.085L57.786 1.85a5.106 5.106 0 0 0-1.848-.693l53.511 91.42c.231-.347.347-.809.347-1.271ZM3.12 29.934C1.272 30.974 0 32.94 0 35.02v56.286c0 2.08 1.387 4.045 3.12 5.085l48.889 28.085c1.156.693 2.427.925 3.814.693L3.467 29.818l-.346.116Z" />
               <path
                 fill="url(#logosNodejs2)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="m50.391.809l-.693.347h.924l-.231-.347Z"
                 transform="translate(0 -9.246)"
               />
               <path
                 fill="url(#logosNodejs3)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M106.792 105.636c1.387-.809 2.427-2.196 2.89-3.698L56.053 10.402c-1.387-.231-2.89-.116-4.16.693L3.351 39.065l52.355 95.465a8.057 8.057 0 0 0 2.196-.693l48.889-28.2Z"
                 transform="translate(0 -9.246)"
               />
               <path
                 fill="url(#logosNodejs4)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="m111.3 104.712l-.347-.578v.809l.346-.231Z"
                 transform="translate(0 -9.246)"
               />
               <path
                 fill="url(#logosNodejs5)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="m106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734l54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814Z"
                 transform="translate(0 -9.246)"
               />
               <path
                 fill="url(#logosNodejs6)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="m106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734l54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814Z"
                 transform="translate(0 -9.246)"
               />
@@ -668,13 +668,13 @@ export const developmentCycleIcons = [
           fill="#FFC24A"
           d="m0 282.998l2.123-2.972L102.527 89.512l.212-2.017L58.48 4.358C54.77-2.606 44.33-.845 43.114 6.951L0 282.998Z"
         />
-        <use fill="#FFA712" fill-rule="evenodd" href="#logosFirebase2" />
+        <use fill="#FFA712" fillRule="evenodd" href="#logosFirebase2" />
         <use filter="url(#logosFirebase0)" href="#logosFirebase2" />
         <path
           fill="#F4BD62"
           d="m135.005 150.38l32.955-33.75l-32.965-62.93c-3.129-5.957-11.866-5.975-14.962 0L102.42 87.287v2.86l32.584 60.233Z"
         />
-        <use fill="#FFA50E" fill-rule="evenodd" href="#logosFirebase3" />
+        <use fill="#FFA50E" fillRule="evenodd" href="#logosFirebase3" />
         <use filter="url(#logosFirebase1)" href="#logosFirebase3" />
         <path
           fill="#F6820C"

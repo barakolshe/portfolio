@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
 import Providers from "@/providers/Providers";
-import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-main min-h-screen w-screen overflow-x-hidden text-foreground">
+      <body className="min-h-screen w-screen overflow-x-hidden font-main text-foreground">
         <Providers>{children}</Providers>
       </body>
     </html>

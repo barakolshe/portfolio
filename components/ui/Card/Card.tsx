@@ -1,6 +1,8 @@
+"use client";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { useInView } from "react-intersection-observer";
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -16,6 +18,60 @@ const Card = React.forwardRef<
   />
 ));
 Card.displayName = "Card";
+
+type direction = "up" | "down" | "left" | "right";
+
+const FadingCard = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & {
+    direction: direction;
+  }
+>(({ className, direction, ...props }, _ref) => {
+  const [animationClassName, setAnimationClassName] = React.useState("");
+  const [viewRef, inView] = useInView(
+    direction === "down" ? { rootMargin: "0px 0px 150px 0px" } : {},
+  );
+
+  const getDirection = (direction: direction) => {
+    switch (direction) {
+      case "up":
+        return "opacity-0 -translate-y-full";
+      case "down":
+        return "opacity-0 translate-y-full";
+      case "right":
+        return "opacity-0 translate-x-full";
+      case "left":
+        return "opacity-0 -translate-x-full";
+      default:
+        return "opacity-0 translate-x-full";
+    }
+  };
+
+  React.useEffect(() => {
+    if (animationClassName !== "" && inView) {
+      setAnimationClassName("");
+    }
+  }, [inView, animationClassName]);
+
+  React.useEffect(() => {
+    setAnimationClassName(getDirection(direction));
+  }, [direction]);
+
+  return (
+    <Card
+      ref={viewRef}
+      className={cn(
+        "transition-[transform,opacity] duration-fade",
+        animationClassName !== ""
+          ? animationClassName
+          : "translate-x-[0%] translate-y-[0%]",
+        className,
+      )}
+      {...props}
+    />
+  );
+});
+FadingCard.displayName = "FadingCard";
 
 const CardHeader = React.forwardRef<
   HTMLDivElement,
@@ -89,6 +145,7 @@ CardDate.displayName = "CardDate";
 
 export {
   Card,
+  FadingCard,
   CardHeader,
   CardFooter,
   CardTitle,

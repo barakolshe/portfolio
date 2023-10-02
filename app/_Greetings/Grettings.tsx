@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FunctionComponent } from "react";
 import * as helloLottie from "@/assets/lottie/hello.json";
-import Lottie from "lottie-react";
 import { Button } from "@/components/ui/Button/Button";
 import { DocumentIcon } from "@heroicons/react/24/solid";
 import SocialLinks from "@/components/shared/SocialLinks/SocialLinks";
@@ -31,7 +30,7 @@ const Greetings: FunctionComponent<GreetingsProps> = () => {
       </div>
       <div className="lottie-width">
         <LottieContainer
-          animationData={helloLottie}
+          animationData={JSON.parse(JSON.stringify(helloLottie))}
           loop={true}
         ></LottieContainer>
       </div>

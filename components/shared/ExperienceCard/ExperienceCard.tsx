@@ -5,6 +5,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
+  FadingCard,
 } from "@/components/ui/Card/Card";
 import Image from "next/image";
 import { FunctionComponent } from "react";
@@ -28,7 +29,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
   className,
 }) => {
   return (
-    <Card className={twMerge(className, "")}>
+    <FadingCard direction="left" className={twMerge(className, "")}>
       <CardHeader className="space-y-0 pb-6">
         <Image
           className="mx-auto mb-1"
@@ -46,7 +47,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
       <CardFooter>
         <CardDate>{dates}</CardDate>
       </CardFooter>
-    </Card>
+    </FadingCard>
   );
 };
 
