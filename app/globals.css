@@ -104,7 +104,7 @@
 
   @media (max-width: 768px) {
     .angled-bottom {
-      @apply box-content pb-[10vw];
+      @apply box-content pb-[15vw];
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
     }
