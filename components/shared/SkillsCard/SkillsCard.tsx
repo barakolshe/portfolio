@@ -25,7 +25,7 @@ const SkillsCard: FunctionComponent<SkillsCardProps> = ({
     <div className={twMerge("flex flex-col gap-7", className)}>
       <p className="text-center text-2xl">{title}</p>
       <div className="grid grid-cols-1 gap-x-3 md:grid-cols-2">
-        <div className="grid grid-cols-auto-skills gap-y-3 md:order-last">
+        <div className="mb-auto grid grid-cols-auto-skills gap-y-3 md:order-last">
           {skills.map((icon) => (
             <Skill
               className="mx-auto w-[80px]"
