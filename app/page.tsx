@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex flex-col justify-between gap-3">
       <ScrollToTop />
       <Navbar />
-      <div className="gradient-background-primary angled-bottom min-h-screen flex-col gap-3">
+      <div className="gradient-background-primary angled-bottom flex min-h-screen flex-col gap-3">
         <div className="h-[68px] bg-transparent" />
         <Greetings />
       </div>

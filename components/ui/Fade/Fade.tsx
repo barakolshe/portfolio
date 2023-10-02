@@ -1,10 +1,11 @@
+"use client";
 import React, { FunctionComponent, ReactNode } from "react";
-import { useInView } from "react-intersection-observer";
+import { IntersectionOptions, useInView } from "react-intersection-observer";
 import { twMerge } from "tailwind-merge";
 
 type direction = "up" | "down" | "left" | "right";
 
-interface FadeProps {
+interface FadeProps extends IntersectionOptions {
   direction: direction;
   children: ReactNode;
   className?: string;
@@ -14,11 +15,13 @@ const Fade: FunctionComponent<FadeProps> = ({
   direction,
   className,
   children,
+  ...intersectionOptions
 }) => {
   const [animationClassName, setAnimationClassName] = React.useState("");
-  const [viewRef, inView] = useInView(
-    direction === "down" ? { rootMargin: "0px 0px 150px 0px" } : {},
-  );
+  const [viewRef, inView] = useInView({
+    triggerOnce: true,
+    ...intersectionOptions,
+  });
 
   const getDirection = (direction: direction) => {
     switch (direction) {
