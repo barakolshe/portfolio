@@ -104,7 +104,8 @@ module.exports = {
         "2": "0.625rem",
       },
       transitionDuration: {
-        fade: "2000ms",
+        "fade-long": "1500ms",
+        "fade-short": "1000ms",
       },
       boxShadow: {
         "topbar-hover": "0 1px 10px rgba(130, 130, 134, 0.1)",
