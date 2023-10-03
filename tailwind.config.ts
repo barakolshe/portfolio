@@ -104,7 +104,7 @@ module.exports = {
         "2": "0.625rem",
       },
       transitionDuration: {
-        "fade-long": "1500ms",
+        "fade-long": "2000ms",
         "fade-short": "1000ms",
       },
       boxShadow: {
@@ -114,6 +114,7 @@ module.exports = {
         "main-layout": "2rem",
         "section-spacing": "2rem",
         "inner-section-spacing": "1.5rem",
+        "navbar-height": "68px",
       },
     },
   },
