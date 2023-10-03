@@ -13,7 +13,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
     <div
       className={clsx(
         "fixed z-10 flex h-[--navbar-height] w-full flex-col justify-center bg-inherit py-4 transition-[transform,background-color] duration-300",
-        scrollingUp ? "translate-y-[0%]" : "-translate-y-full",
+        scrollingUp || onTop ? "translate-y-[0%]" : "-translate-y-full",
         { "bg-navbar-scroll shadow-topbar-hover": !onTop },
       )}
     >
