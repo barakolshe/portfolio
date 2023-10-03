@@ -17,7 +17,7 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
         { "bg-navbar-scroll shadow-topbar-hover": !onTop },
       )}
     >
-      <div className="container my-auto py-4">
+      <div className="container py-4">
         <h1 className="font-brand text-3xl font-normal text-white">
           {greetings.name}
         </h1>
