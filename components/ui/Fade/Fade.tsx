@@ -1,4 +1,5 @@
 "use client";
+import clsx from "clsx";
 import React, { FunctionComponent, ReactNode } from "react";
 import { IntersectionOptions, useInView } from "react-intersection-observer";
 import { twMerge } from "tailwind-merge";
@@ -13,17 +14,33 @@ type FadeProps = Omit<IntersectionOptions, "rootMargin & triggerOnce"> & {
 };
 
 const getDirection = (direction: direction) => {
+  let common = "opacity-0";
   switch (direction) {
     case "up":
-      return "opacity-0 -translate-y-fade-translate-mobile md:-translate-y-fade-translate-desktop";
+      return clsx(
+        common,
+        "-translate-y-fade-translate-mobile md:-translate-y-fade-translate-desktop",
+      );
     case "down":
-      return "opacity-0 translate-y-fade-translate-mobile md:translate-y-fade-translate-desktop";
+      return clsx(
+        common,
+        "translate-y-fade-translate-mobile md:translate-y-fade-translate-desktop",
+      );
     case "right":
-      return "opacity-0 translate-x-fade-translate-mobile md:translate-x-fade-translate-desktop";
+      return clsx(
+        common,
+        "translate-x-fade-translate-mobile md:translate-x-fade-translate-desktop",
+      );
     case "left":
-      return "opacity-0 -translate-x-fade-translate-mobile md:-translate-x-fade-translate-desktop";
+      return clsx(
+        common,
+        "-translate-x-fade-translate-mobile md:-translate-x-fade-translate-desktop",
+      );
     default:
-      return "opacity-0 translate-x-fade-translate-mobile md:translate-x-fade-translate-desktop";
+      return clsx(
+        common,
+        "translate-x-fade-translate-mobile md:translate-x-fade-translate-desktop",
+      );
   }
 };
 
