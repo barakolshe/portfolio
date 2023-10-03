@@ -86,8 +86,14 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply overflow-y-auto bg-background text-foreground;
+    @apply min-h-screen overflow-y-auto bg-background font-main text-foreground;
+  }
+
+  html,
+  body {
+    @apply w-screen overflow-x-hidden;
   }
 
   .lottie-width {

@@ -30,7 +30,7 @@ const useTopbarScroll = () => {
     }
   }, [handleScroll]);
 
-  const onTop = typeof window !== "undefined" ? window.scrollY < 15 : true;
+  const onTop = typeof window !== "undefined" ? window.scrollY === 0 : true;
 
   return {
     scrollingUp,

@@ -55,7 +55,7 @@ const Fade: FunctionComponent<FadeProps> = ({
     <div
       ref={viewRef}
       className={twMerge(
-        "duration-fade-short md:duration-fade-long transition-[transform,opacity]",
+        "duration-fade-long transition-[transform,opacity]",
         animationClassName !== ""
           ? animationClassName
           : "translate-x-[0%] translate-y-[0%]",
