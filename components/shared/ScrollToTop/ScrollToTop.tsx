@@ -6,7 +6,9 @@ interface ScrollToTopProps {}
 const ScrollToTop: FunctionComponent<ScrollToTopProps> = () => {
   React.useEffect(() => {
     if (typeof window !== "undefined") {
-      window.scrollTo(0, 0);
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
     }
   }, []);
 
