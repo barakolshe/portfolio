@@ -118,11 +118,11 @@ export const links = {
 
 export const greetings = {
   name: name,
-  title: "Hi all I'm Barak",
-  description: `I'm a passionate Full Stack web developer with experience in React,
+  title: "Hello, I'm Barak",
+  description: `(This project is still in progress) I'm a passionate Fullstack developer with experience in React,
         Next.js, Vite, Material-UI, React bootstrap, tailwind and more. In
-        addition i have experience in Node.js and Python for my backend
-        technologies stack`,
+        addition i have experience in Node.js and Python for backend
+        development`,
 };
 
 export const skills = [
