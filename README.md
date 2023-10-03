@@ -5,9 +5,12 @@ My portfolio, written in Next.js.
 
 # Tech stack
 Written using:
+```
 Typescript
 Tailwind
 Shadcn.ui
+Amplify for hosting
+```
 
 # Running
 
