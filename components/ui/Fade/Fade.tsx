@@ -29,7 +29,7 @@ const getDirection = (direction: direction) => {
 
 const Fade: FunctionComponent<FadeProps> = ({
   direction,
-  bottomMargin = "0%",
+  bottomMargin = "0px",
   className,
   children,
   ...intersectionOptions
