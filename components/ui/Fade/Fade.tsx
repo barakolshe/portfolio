@@ -15,15 +15,15 @@ type FadeProps = Omit<IntersectionOptions, "rootMargin & triggerOnce"> & {
 const getDirection = (direction: direction) => {
   switch (direction) {
     case "up":
-      return "opacity-0 -translate-y-1/2 md:-translate-y-full";
+      return "opacity-0 -translate-y-fade-translate-mobile md:-translate-y-fade-translate-desktop";
     case "down":
-      return "opacity-0 translate-y-1/2 md:translate-y-full";
+      return "opacity-0 translate-y-fade-translate-mobile md:translate-y-fade-translate-desktop";
     case "right":
-      return "opacity-0 translate-x-1/2 md:translate-x-full";
+      return "opacity-0 translate-x-fade-translate-mobile md:translate-x-fade-translate-desktop";
     case "left":
-      return "opacity-0 -translate-x-1/2 md:-translate-x-full";
+      return "opacity-0 -translate-x-fade-translate-mobile md:-translate-x-fade-translate-desktop";
     default:
-      return "opacity-0 translate-x-1/2 md:translate-x-full";
+      return "opacity-0 translate-x-fade-translate-mobile md:translate-x-fade-translate-desktop";
   }
 };
 
@@ -55,7 +55,7 @@ const Fade: FunctionComponent<FadeProps> = ({
     <div
       ref={viewRef}
       className={twMerge(
-        "duration-fade-long transition-[transform,opacity]",
+        "transition-[transform,opacity] duration-fade",
         animationClassName !== ""
           ? animationClassName
           : "translate-x-[0%] translate-y-[0%]",

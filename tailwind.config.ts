@@ -104,8 +104,7 @@ module.exports = {
         "2": "0.625rem",
       },
       transitionDuration: {
-        "fade-long": "2000ms",
-        "fade-short": "1000ms",
+        fade: "1700ms",
       },
       boxShadow: {
         "topbar-hover": "0 1px 10px rgba(130, 130, 134, 0.1)",
@@ -115,6 +114,8 @@ module.exports = {
         "section-spacing": "2rem",
         "inner-section-spacing": "1.5rem",
         "navbar-height": "68px",
+        "fade-translate-mobile": "100%",
+        "fade-translate-desktop": "100%",
       },
     },
   },
