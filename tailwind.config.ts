@@ -75,6 +75,11 @@ module.exports = {
           hover: "var(--github-hover)",
           foreground: "var(--github-foreground)",
         },
+        internet: {
+          DEFAULT: "var(--internet)",
+          hover: "var(--internet-hover)",
+          foreground: "var(--internet-foreground)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -104,7 +109,7 @@ module.exports = {
         "2": "0.625rem",
       },
       transitionDuration: {
-        fade: "1700ms",
+        fade: "1400ms",
       },
       boxShadow: {
         "topbar-hover": "0 1px 10px rgba(130, 130, 134, 0.1)",

@@ -1,20 +1,25 @@
 "use client";
 import React, { FunctionComponent } from "react";
 import useTopbarScroll from "@/hooks/useTopbarScroll";
-import clsx from "clsx";
 import { greetings } from "@/config/config";
+import { cn } from "@/lib/utils";
 
-interface NavbarProps {}
+interface AnimatedNavbarProps {
+  className?: string;
+}
 
-const Navbar: FunctionComponent<NavbarProps> = () => {
+const AnimatedNavbar: FunctionComponent<AnimatedNavbarProps> = ({
+  className,
+}) => {
   const { scrollingUp, onTop } = useTopbarScroll();
 
   return (
     <div
-      className={clsx(
-        "fixed z-10 w-full bg-inherit transition-[transform,background-color] duration-300",
+      className={cn(
+        "fixed z-10 w-full transition-[transform,background-color] duration-300",
         scrollingUp || onTop ? "translate-y-[0%]" : "-translate-y-full",
         { "bg-navbar-scroll shadow-topbar-hover": !onTop },
+        className,
       )}
     >
       <div className="container py-4">
@@ -26,4 +31,4 @@ const Navbar: FunctionComponent<NavbarProps> = () => {
   );
 };
 
-export default Navbar;
+export default AnimatedNavbar;

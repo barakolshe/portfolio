@@ -1,17 +1,8 @@
 import ProjectCard from "@/components/shared/ProjectCard/ProjectCard";
+import { projects } from "@/config/config";
 import { FunctionComponent } from "react";
 
 interface ProjectsProps {}
-
-const projects = [
-  {
-    title: "Playit",
-    techStack: ["Java", "Android Studio"],
-    description:
-      "An android studio project that allows players to play guitar.\n the applistens and then rates the performance.",
-    githubLink: "bla",
-  },
-];
 
 const Projects: FunctionComponent<ProjectsProps> = () => {
   return (
@@ -25,6 +16,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             techStack={project.techStack}
             description={project.description}
             githubLink={project.githubLink}
+            siteLink={project.siteLink}
           />
         ))}
       </div>

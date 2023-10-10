@@ -44,7 +44,7 @@ export const backendIcons = [
   },
   {
     name: "FastAPI",
-    icon: "/icons/fastapi.svg",
+    icon: "/icons/fastAPI.svg",
   },
   {
     name: "Django",
@@ -119,10 +119,10 @@ export const links = {
 export const greetings = {
   name: name,
   title: "Hello, I'm Barak",
-  description: `(This project is still in progress) I'm a passionate Fullstack developer with experience in React,
-        Next.js, Vite, Material-UI, React bootstrap, tailwind and more. In
-        addition i have experience in Node.js and Python for backend
-        development`,
+  description: `I'm a fullstack engineer with 4 years of experience 
+  in designing, developing, and maintaining high-scale 
+  complex applications on cloud environments, following microservices architecture.
+  `,
 };
 
 export const skills = [
@@ -149,7 +149,7 @@ export const education = [
     title: "Computer Science Major",
     achievements: ["Finished with honors"],
     description:
-      "Studied C and Arduino, and learned planty of information about computers under the hood and about electricity.",
+      "Studied C and Arduino, and learned planty of information about computers under the hood and robotics.",
     dates: "2015 - 2018",
   },
   {
@@ -164,8 +164,8 @@ export const education = [
     place: "IDF GAMA course",
     title: "Computer Science",
     achievements: [],
-    description:
-      "A highly sought after course of the intelligence corps.\nLearned valuble information about programming and computers",
+    description: `A highly sought after course of the intelligence corps.
+      Learned valuble information about programming patterns, cyber and security`,
     dates: "Feb 2019 - May 2019",
   },
   {
@@ -183,7 +183,7 @@ export const experience = [
     place: "IDF 81 Unit of the Intelligence Corps",
     title: "Full stack developer",
     description:
-      "Developed cyber supporting applications for various cyber needs.\n Developed and designed complex tools in microservices archeticture using variety of technologies and working with talented people",
+      "Developed multiple large scale micro-services applications for various needs, and got to work with talented and smart people about projects that helped israel's security.",
     dates: "Feb 2019 - Dec 2022",
   },
   {
@@ -191,8 +191,66 @@ export const experience = [
     place: "Freelancing",
     title: "Full stack developer",
     description:
-      "Developed multiple projects for personal use and via freelancing",
+      "Developed multiple projects for personal use, and freelanced and developed paid projects.",
     dates: "Dec 2022 - Today",
+  },
+  {
+    icon: "/icons/aman.svg",
+    place: "War efforts",
+    title: "Developer and helper",
+    description:
+      "Working on full stack projects, and helping families with missing persons to try to find their loved ones.",
+    dates: "Today",
+  },
+];
+
+export const projects = [
+  {
+    title: "Classified",
+    techStack: [
+      "Node.js",
+      "FastAPI",
+      "RabbitMQ",
+      "MySQL",
+      "Microservices",
+      "Vite",
+      "Material UI",
+      "Redux",
+      "Typescript",
+    ],
+    description: `My main IDF project. 
+      A large project with 4 services, external API, and uses a message queue.
+      I was one of the first developers to work on this project, and I designed, developed, and maintained it.`,
+  },
+  {
+    title: "Portfolio",
+    techStack: ["Next.js", "Tailwind", "Typescript", "AWS", "Figma"],
+    description: `A portfolio i've designed myself and developed myself.
+    Both mobile and desktop compatible, and code design is generic and well suited for adding more items and sections.`,
+    githubLink: "https://github.com/barakolshe/portfolio",
+    siteLink: "https://www.barakolshe.net/",
+  },
+  {
+    title: "Google bookstore",
+    techStack: ["Vite", "Material UI", "AWS"],
+    description: `A simple project that fetches books from the google bookstore API using pagaination, and allows the user to fake buy them. 
+      The meaning of this project is to overcome API difficulties. For example supporting more items per page than the API provides, and getting the page number even though its not provided by the API.`,
+    githubLink: "https://github.com/barakolshe/google-bookstore",
+    siteLink: "https://main.d27k4ncsi8vb3a.amplifyapp.com",
+  },
+  {
+    title: "Receip",
+    techStack: ["Next.js", "Node.js", "FastAPI", "PostgreSQL", "REST API"],
+    description:
+      "Currently working on this. An app to help split bills between multiple people. Uses image to text to read the receipts and then allows users to log in and mark which items are theirs.",
+    githubLink: "https://github.com/barakolshe/receip",
+  },
+  {
+    title: "Playit",
+    techStack: ["Java", "Android Studio"],
+    description:
+      "An educational android app that allows the user to play the guitar according to different music pieces. The app then listents to the strumming and ranks the performance.",
+    githubLink: "https://github.com/barakolshe/playit",
   },
 ];
 

@@ -50,6 +50,10 @@
     --github: #222222;
     --github-hover: #333333;
     --github-foreground: #ffffff;
+
+    --internet: #1da1f2;
+    --internet-hover: #0e80c4;
+    --internet-foreground: #ffffff;
   }
 
   .dark {
