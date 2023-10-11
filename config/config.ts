@@ -145,27 +145,11 @@ export const skills = [
 
 export const education = [
   {
-    place: "Ort Darski High School",
-    title: "Computer Science Major",
-    achievements: ["Finished with honors"],
-    description:
-      "Studied C and Arduino, and learned planty of information about computers under the hood and robotics.",
-    dates: "2015 - 2018",
-  },
-  {
-    place: "Magshimim",
-    title: "Computer Science",
-    achievements: ["Finished with honors"],
-    description:
-      "Studied computers and made a lot of projects in C++, C and python.",
-    dates: "2015 - 2018",
-  },
-  {
     place: "IDF GAMA course",
     title: "Computer Science",
     achievements: [],
     description: `A highly sought after course of the intelligence corps.
-      Learned valuble information about programming patterns, cyber and security`,
+    Acquired valuable knowledge regarding large-scale project design patterns, as well as knowledge about cyber and computer exploits.`,
     dates: "Feb 2019 - May 2019",
   },
   {
@@ -174,6 +158,22 @@ export const education = [
     achievements: ["Currently studying"],
     description: "Currently working on my computer science degree.",
     dates: "2022 - Today",
+  },
+  {
+    place: "Ort Darski High School",
+    title: "Computer Science Major",
+    achievements: ["Finished with honors"],
+    description: `Studied C, Arduino and robotics.
+    For my final project I've created a "smart aquarium" for fishes.`,
+    dates: "2015 - 2018",
+  },
+  {
+    place: "Magshimim",
+    title: "Computer Science",
+    achievements: ["Finished with honors"],
+    description: `Studied C, C++, Python, Data structures, networking, and reverse engineering.
+      Gave me a very good base and passion to pursue computer engineering.`,
+    dates: "2015 - 2018",
   },
 ];
 
