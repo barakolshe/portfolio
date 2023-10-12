@@ -44,7 +44,7 @@ export const backendIcons = [
   },
   {
     name: "FastAPI",
-    icon: "/icons/fastAPI.svg",
+    icon: "/icons/fastapi.svg",
   },
   {
     name: "Django",
@@ -160,19 +160,19 @@ export const education = [
     dates: "2022 - Today",
   },
   {
-    place: "Ort Darski High School",
-    title: "Computer Science Major",
-    achievements: ["Finished with honors"],
-    description: `Studied C, Arduino and robotics.
-    For my final project I've created a "smart aquarium" for fishes.`,
-    dates: "2015 - 2018",
-  },
-  {
     place: "Magshimim",
     title: "Computer Science",
     achievements: ["Finished with honors"],
     description: `Studied C, C++, Python, Data structures, networking, and reverse engineering.
       Gave me a very good base and passion to pursue computer engineering.`,
+    dates: "2015 - 2018",
+  },
+  {
+    place: "Ort Darski High School",
+    title: "Computer Science Major",
+    achievements: ["Finished with honors"],
+    description: `Studied C, Arduino and robotics.
+    For my final project I've created a "smart aquarium" for fishes.`,
     dates: "2015 - 2018",
   },
 ];
