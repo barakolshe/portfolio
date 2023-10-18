@@ -228,7 +228,7 @@ export const projects = [
     description: `A portfolio i've designed myself and developed myself.
     Both mobile and desktop compatible, and code design is generic and well suited for adding more items and sections.`,
     githubLink: "https://github.com/barakolshe/portfolio",
-    siteLink: "https://www.barakolshe.net/",
+    siteLink: "https://www.barakolshe.com/",
   },
   {
     title: "Google bookstore",
@@ -236,7 +236,7 @@ export const projects = [
     description: `A simple project that fetches books from the google bookstore API using pagaination, and allows the user to fake buy them. 
       The meaning of this project is to overcome API difficulties. For example supporting more items per page than the API provides, and getting the page number even though its not provided by the API.`,
     githubLink: "https://github.com/barakolshe/google-bookstore",
-    siteLink: "https://main.d27k4ncsi8vb3a.amplifyapp.com",
+    siteLink: "https://main.d27tlkg4xjtz4u.amplifyapp.com",
   },
   {
     title: "Receip",
