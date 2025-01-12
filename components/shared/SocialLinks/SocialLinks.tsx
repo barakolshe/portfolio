@@ -6,12 +6,6 @@ import { links } from "@/config/config";
 
 const icons = [
   {
-    name: "twitter",
-    path: "/icons/twitter.svg",
-    className: "bg-twitter hover:bg-twitter-hover",
-    link: links.twitter,
-  },
-  {
     name: "linkedin",
     path: "/icons/linkedin.svg",
     className: "bg-linkedin hover:bg-linkedin-hover",
