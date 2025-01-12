@@ -113,13 +113,13 @@ export const links = {
   github: "https://github.com/barakolshe",
   linkedin: "https://www.linkedin.com/in/barak-olshevizky-206904274/",
   twitter: "https://twitter.com/barakolshe",
-  resume: "/docs/Resume.pdf",
+  resume: "/docs/Barak-Resume.pdf",
 };
 
 export const greetings = {
   name: name,
   title: "Hello, I'm Barak",
-  description: `I'm a fullstack engineer with 4 years of experience 
+  description: `I'm a Software Engineer with 5 years of experience 
   in designing, developing, and maintaining high-scale 
   complex applications on cloud environments, following microservices architecture.
   `,
@@ -127,14 +127,14 @@ export const greetings = {
 
 export const skills = [
   {
-    title: "Frontend",
-    skills: frontendIcons,
-    animation: frontendLottie,
-  },
-  {
     title: "Backend",
     skills: backendIcons,
     animation: backendLottie,
+  },
+  {
+    title: "Frontend",
+    skills: frontendIcons,
+    animation: frontendLottie,
   },
   {
     title: "Development Cycle",
@@ -200,7 +200,14 @@ export const experience = [
     title: "Developer and helper",
     description:
       "Working on full stack projects, and helping families with missing persons to try to find their loved ones.",
-    dates: "Today",
+    dates: "Oct 2023 - Dec 2023",
+  },
+  {
+    icon: "/icons/cyber.svg",
+    place: "Kovrr - Cyber Risk Quantification",
+    title: "Full stack developer",
+    description: "Full stack developer for a cyber security company.",
+    dates: "Nov 2023 - Today",
   },
 ];
 
