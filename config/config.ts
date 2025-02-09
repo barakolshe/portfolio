@@ -112,7 +112,7 @@ const name = "Barak Olshevizky";
 export const links = {
   github: "https://github.com/barakolshe",
   linkedin: "https://www.linkedin.com/in/barak-olshevizky-206904274/",
-  resume: "/docs/Barak-Resume.pdf",
+  resume: "/docs/barak-resume.pdf",
 };
 
 export const greetings = {
