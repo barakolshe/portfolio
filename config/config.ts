@@ -180,7 +180,7 @@ export const experience = [
   {
     icon: "/icons/aman.svg",
     place: "IDF 81 Unit of the Intelligence Corps",
-    title: "Full stack developer",
+    title: "Backend developer",
     description:
       "Developed multiple large scale micro-services applications for various needs, and got to work with talented and smart people about projects that helped israel's security.",
     dates: "Feb 2019 - Dec 2022",
@@ -188,7 +188,7 @@ export const experience = [
   {
     icon: "/icons/dove.svg",
     place: "Freelancing",
-    title: "Full stack developer",
+    title: "Backend developer",
     description:
       "Developed multiple projects for personal use, and freelanced and developed paid projects.",
     dates: "Dec 2022 - Today",
@@ -198,14 +198,14 @@ export const experience = [
     place: "War efforts",
     title: "Developer and helper",
     description:
-      "Working on full stack projects, and helping families with missing persons to try to find their loved ones.",
+      "Working on backend projects, and helping families with missing persons to try to find their loved ones.",
     dates: "Oct 2023 - Dec 2023",
   },
   {
     icon: "/icons/cyber.svg",
     place: "Kovrr - Cyber Risk Quantification",
-    title: "Full stack developer",
-    description: "Full stack developer for a cyber security company.",
+    title: "Backend developer",
+    description: "Backend developer for a cyber security company.",
     dates: "Nov 2023 - Today",
   },
 ];
@@ -219,14 +219,12 @@ export const projects = [
       "RabbitMQ",
       "MySQL",
       "Microservices",
-      "Vite",
       "Material UI",
       "Redux",
       "Typescript",
     ],
     description: `My main IDF project. 
-      A large project with 4 services, external API, and uses a message queue.
-      I was one of the first developers to work on this project, and I designed, developed, and maintained it.`,
+     Highly classified project, that was meant to serve multiple departments.`,
   },
   {
     title: "Portfolio",
@@ -235,21 +233,6 @@ export const projects = [
     Both mobile and desktop compatible, and code design is generic and well suited for adding more items and sections.`,
     githubLink: "https://github.com/barakolshe/portfolio",
     siteLink: "https://www.barakolshe.com/",
-  },
-  {
-    title: "Google bookstore",
-    techStack: ["Vite", "Material UI", "AWS"],
-    description: `A simple project that fetches books from the google bookstore API using pagaination, and allows the user to fake buy them. 
-      The meaning of this project is to overcome API difficulties. For example supporting more items per page than the API provides, and getting the page number even though its not provided by the API.`,
-    githubLink: "https://github.com/barakolshe/google-bookstore",
-    siteLink: "https://main.d27tlkg4xjtz4u.amplifyapp.com",
-  },
-  {
-    title: "Receip",
-    techStack: ["Next.js", "Node.js", "FastAPI", "PostgreSQL", "REST API"],
-    description:
-      "Currently working on this. An app to help split bills between multiple people. Uses image to text to read the receipts and then allows users to log in and mark which items are theirs.",
-    githubLink: "https://github.com/barakolshe/receip",
   },
   {
     title: "Playit",

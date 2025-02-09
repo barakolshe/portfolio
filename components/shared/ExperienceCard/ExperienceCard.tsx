@@ -39,7 +39,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
         />
         <CardTitle className="text-center">{place}</CardTitle>
         <p className="mt-[0px] text-center text-lg leading-7 text-foreground">
-          Full stack developer
+          Backend developer
         </p>
         <p className="whitespace-pre-line text-xs">{description}</p>
       </CardHeader>
