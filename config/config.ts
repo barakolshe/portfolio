@@ -180,32 +180,24 @@ export const experience = [
   {
     icon: "/icons/aman.svg",
     place: "IDF 81 Unit of the Intelligence Corps",
-    title: "Backend developer",
+    title: "Software engineer",
     description:
-      "Developed multiple large scale micro-services applications for various needs, and got to work with talented and smart people about projects that helped israel's security.",
-    dates: "Feb 2019 - Dec 2022",
+      "Researched and developed multiple project and apps, for various military needs.",
+    dates: "Feb 2019 - January 2023",
   },
   {
     icon: "/icons/dove.svg",
     place: "Freelancing",
-    title: "Backend developer",
+    title: "Fullstack freelance developer",
     description:
       "Developed multiple projects for personal use, and freelanced and developed paid projects.",
     dates: "Dec 2022 - Today",
   },
   {
-    icon: "/icons/aman.svg",
-    place: "War efforts",
-    title: "Developer and helper",
-    description:
-      "Working on backend projects, and helping families with missing persons to try to find their loved ones.",
-    dates: "Oct 2023 - Dec 2023",
-  },
-  {
     icon: "/icons/cyber.svg",
     place: "Kovrr - Cyber Risk Quantification",
-    title: "Backend developer",
-    description: "Backend developer for a cyber security company.",
+    title: "Fullstack developer",
+    description: "Fullstack developer for a cyber security company.",
     dates: "Nov 2023 - Today",
   },
 ];
